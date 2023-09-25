@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-10</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<body>
+    <body>
+        <div class="row">
+            <div class="col-3">
+            </div>
+        <div class="d-flex justify-content-center bg-warning m-5 col-5 ">
+            <div class="justify-content-center">
+            <h1>Date and Time</h1><br>
+            <input class="form-group btn btn btn-danger " type="button" onclick="date()" value="Show Date"><br>
+            <div class="justify-content-center" id="result-container-1">
+
+            </div><br>
+            <input class="form-group btn btn btn-danger " type="button" onclick="time()" value="Show Time">
+            <div class="justify-content-center" id="result-container-2">
+
+            </div><br>
+            </div>
+        </div>
+        </div>
+        <script>
+            function date() {
+                const today = new Date();
+                const year = today.getFullYear();
+                const month = String(today.getMonth() + 1).padStart(2, '0'); 
+                const day = String(today.getDate()).padStart(2, '0');
+                const formattedDate = `${year}-${month}-${day}`;
+                var resultContainer = document.getElementById("result-container-1");
+                resultContainer.innerHTML = `Today's Date: ${formattedDate}`;
+            }
+            function time() {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const seconds = String(now.getSeconds()).padStart(2, '0');
+                const formattedTime = `${hours}:${minutes}:${seconds}`; 
+                var resultContainer = document.getElementById("result-container-2");
+                resultContainer.innerHTML = `TIME: ${formattedTime}`;
+            }
+
+            </script>
+
+    
+</body>
+</html>

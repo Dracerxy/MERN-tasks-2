@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-5</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1a3ea7756e.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div class="card bg-light ">
+        <article class="card-body mx-auto">
+            <form class="needs-validation" novalidate>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="firstname">First Name </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                     </div>
+                    <input name="firstname" class="form-control" placeholder="First Name" type="text" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please Supply your First Name.
+                      </div>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="lasttname">Last Name </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i> </span>
+                     </div>
+                    <input name="lastname" class="form-control" placeholder="Last Name" type="text" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please Supply Your Last Name.
+                      </div>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="email">Email</label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i> </span>
+                     </div>
+                    <input name="email" class="form-control" placeholder="E-Mail Address" type="text" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please Supply your Email Address.
+                      </div>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="phn">Phone # </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-phone"></i> </span>
+                     </div>
+                    <input name="phn" class="form-control" placeholder="(845)555-1212" type="text" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    <div class="invalid-feedback">
+                        Please Supply Your Phone Number
+                      </div>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="add">Address </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-house"></i></span>
+                     </div>
+                    <input name="add" class="form-control" placeholder="Address" type="text" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    <div class="invalid-feedback">
+                        Please supply Your Address.
+                      </div>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="city">City </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-house"></i> </span>
+                     </div>
+                    <input name="city" class="form-control" placeholder="City" type="text" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    <div class="invalid-feedback">
+                        Please Supply Your City.
+                      </div>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="state">State </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-user-circle"></i> </span>
+                     </div>
+                     <select name="state" id="state" class="form-select" required>
+                        <option selected disabled value="--select state--" >--select state--</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        </select>
+                        
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    <div class="invalid-feedback">
+                        Please Supply Your State.
+                      </div>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="host">Do You Have Hosting? </label>
+                    
+                    Yes<input name="host" class="form-control" placeholder="State" type="radio" id="r1" required>
+                    No<input name="host" class="form-control" placeholder="State" type="radio" id="r2" required>
+                </div>
+                <div class="form-group input-group">
+                    <label class="m-1 p-1" for="pro">Project Desription </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-pen"></i> </span>
+                     </div>
+                    <textarea placeholder="Project description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning btn-block "> Send  </button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <script>
+        (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+        </Script>
+</body>
+</html>

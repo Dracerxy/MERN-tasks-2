@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-13</title>
+    <link rel="stylesheet" href="/css/train.css" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<body>
+    <section class="stage" id="state">
+        <div class="sky" id="state">
+          <div class="cloud"></div>
+          <div class="cloud"></div>
+        </div>
+        <div class="state" id="state">
+          <div class="train" id="state">
+            <div class="wagon"></div>
+            <div class="wagon"></div>
+            <div class="wagon"></div>
+            <div class="locomotive">
+              <div class="cabin"></div>
+              <div class="motor"></div>
+              <div class="chimney">
+                <div class="smoke"></div>
+              </div>
+              <div class="light"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <div class="container justify-content-center " style="display: flex;">
+       <div class="container"> 
+        <h4> Click the Following Button to handel the animation </h4>
+    </div>
+       <div class="container">
+    <input class="m-1" type="button" value="start" id="start" onclick="start()">
+    <input class="m-1" type="button" value="stop" id="stop" onclick="stop()">
+    </div>
+</div>
+<script>
+    function start(){
+        var ani=document.getElementById("state");
+        ani.style.animationPlayState='running';
+    }
+    function stop(){
+        var ani=document.getElementById("state");
+        ani.style.animationPlayState='paused';
+    }
+</script>
+</body>
+</html>
